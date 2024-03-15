@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe e pseudo-elemento</title>
+    
+    <style>
+        /*
+          # = id
+          . = class
+          : = pseudo-class
+          :: = pseudo-element
+          > = clildren
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+        }
+
+        a:visited{
+            color: darkred;
+            text-decoration: none; /*tirar o sublinhado*/
+            font-weight: bolder;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial:hover{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+
+        .especial::before{
+            content: ">>" ;
+            font-weight: lighter;
+            color: darkgray;
+            text-decoration: none;
+        }
+
+        .especial::after{
+            content: "<<";
+            text-decoration: none;
+            font-weight: lighter;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>
+        Para aprender HTML5 e CSS3, acesse o <a href="https://gustavoguanabara.github.io" target="_blank">GitHub do Guanabara</a>
+    </p>
+    <p>
+        Se conhecer conhecer mais sobre os padrões, visite o site do <a href="https://w3c.com" target="_blank">Escritório do W3C no Brasil </a>
+    </p>
+    <p>Para acompanhar os cursos, acesse o <a href="https://www.youtube.com/cursoemvideo/" target="_blank" class="especial"  >canal do CursoemVideo</a>
+
+    </p>
+</body>
+</html>
