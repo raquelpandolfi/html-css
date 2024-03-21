@@ -7,18 +7,35 @@
 :root{
   --font1: "Sriracha", sans-serif;
   --font2: "Passion One", sans-serif;
-  
-
+  --color1: black;
+  --color2: white;
+  --color3: slategrey;
 
 }
 
 h1{
+    height: 100px;
     font-family: var(--font2);
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+}
 
+header{
+
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
 }
 
 header > p{
     font-family: var(--font2);
+    color: var(--color3);
+    
+}
+
+header > a{
+    color: var(--color1);
 }
 
 .e0{
