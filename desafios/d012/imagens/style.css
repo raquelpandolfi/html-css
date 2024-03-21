@@ -20,32 +20,61 @@
 
 body{
     font-family: var(--font1);
+    min-height: 100vh;
 }
 
-h1{
+header{
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+}
+
+header > h1{
     height: 100px;
     font-family: var(--font2);
     background-color: var(--color1);
     color: var(--color2);
-    text-align: center;
+    padding-top: 50px;
+    font-size: 60px;
+    font-variant: small-caps;
 }
 
-header{
-
-    background-color: var(--color1);
-    color: var(--color2);
-    text-align: center;
-}
 
 header > p{
     font-family: var(--font2);
-    color: var(--color3);
-    
+    padding-bottom: 50px;
 }
 
-header > a{
-    color: var(--color1);
+a{
+    color: var(--color2);
+    text-decoration: none;
+    font-weight: bolder;
 }
+
+a :hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+}
+
+.normal{
+    background-color: var(--color2);
+}
+
+.imagem{
+    background-color: blue;
+    
+}
+footer{
+    background-color: var(--color1);
+    text-align: center  ;
+    color: var(--color2);
+}
+
 
 
 
