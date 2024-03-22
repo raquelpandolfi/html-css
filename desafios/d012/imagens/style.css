@@ -68,7 +68,14 @@ section.normal{
 section.imagem{
     background-color: blue;
     background-image: url(background001.jpg);
-    
+    background-position: right center;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.311);
+    color: var(--color2);
+    width: 300px;
+    margin: 20px;
 }
 
 footer{
