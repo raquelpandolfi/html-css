@@ -61,17 +61,19 @@ section{
     line-height: 2em;
 }
 
-.normal{
+section.normal{
     background-color: var(--color2);
 }
 
-.imagem{
+section.imagem{
     background-color: blue;
+    background-image: url(background001.jpg);
     
 }
+
 footer{
     background-color: var(--color1);
-    text-align: center  ;
+    text-align: center;
     color: var(--color2);
 }
 
